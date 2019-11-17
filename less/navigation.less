@@ -8,11 +8,25 @@ nav{
     text-align: center;
     padding:3%;
 
+    @media @mobile{
+        dislpay:block;
+        font-size:1.5rem;
+        width: 90%;
+        float: right;
+        padding:0;
+    }//nav mobile query end
     
     a{
         
         margin-left:7%;
         margin-right:7%;
+
+        @media @mobile{
+            width:100%;
+            margin-left:3%;
+            margin-right:0%;
+            
+        }//nav mobile links end
 
     }//nav links end
 
@@ -20,6 +34,28 @@ nav{
 
 .team-nav{
     border:2px solid green;
-    width:100%;
-    background-color: rgb(235, 234, 234);
+    width:80%;
+    display:inline-block;
+    font-size: 2.0rem;
+    text-decoration: none;
+    height: 60px;
+    text-align: center;
+    padding:3%;
+    
+    
+
+    @media @mobile{
+        font-size:1.5rem;
+        width: 100%;
+      padding:3%;
+        margin-bottom:0;
+        height:40px;
+
+        a{
+            width:100%;
+            margin-left:3%;
+            margin-right:3%;
+            margin-bottom:0;
+        }
+    }//nav mobile query end
 } //nav on team page end

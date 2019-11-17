@@ -1,9 +1,33 @@
 
 
 body{
-    border:2px solid black;
-    background-image: url("https://unsplash.com/photos/r6PVGAhQeW0");
+    border:2px solid blue;
+    
 }
+
+.team-head{
+    width:100%;
+    background-color: rgb(235, 234, 234);
+} //head end
+
+.logo{
+   // border:2px solid black;
+   // border-radius: 30%;
+   // float:right;
+   // width:8%;
+   // margin-right:5%;
+   border-radius: 30%;
+    float:right;
+    width:8%;
+    margin-right:5%;
+
+    @media @mobile{
+        width:20%;
+
+    } //logo mobile query end
+
+}//logo div end
+
 
 
 .header{
@@ -11,6 +35,13 @@ body{
     display:inline-block;
     text-align: center;
     margin:2%;
+
+    @media @mobile{
+        border:2px solid green;
+        width:100%;
+        margin:0;
+
+    }//header mobile query end
 } //header end
 
 
@@ -19,16 +50,47 @@ body{
     flex-direction: column;
     .team-layout();
 
+  
+
+    @media @mobile{
+        width:100%;
+
+
+    } //jasmine mobile query end
+
     .jasmine-content{
+
         .team-content();
-    } //jasmine content end
+
+        h2{
+            border:2px solid green;
+        }
+    
+        h3{
+            border:2px solid purple;
+            margin:5%;
+        }
+    
+        p{
+            border:2px solid red;
+            margin:3%;
+        }
+    
+        button{
+            border:2px solid blue;
+            margin-bottom:3%;
+        }
+    
+    
     
     .jasmine-img{
-        width: 50%;
+        width:40%;
         border-radius:50%;
-    }
+        height: 250px;
 
-    
+    } //jasmine img end
+
+} //jasmine content end
     
 } //jasmine div end
 
@@ -37,9 +99,35 @@ body{
     flex-direction: column;
     .team-layout();
 
+    @media @mobile{
+        width:100%;
+
+
+    } //bao mobile query end
+
     .bao-content{
 
         .team-content();
+
+        h2{
+            border:2px solid green;
+        }
+    
+        h3{
+            border:2px solid purple;
+            margin:5%;
+        }
+    
+        p{
+            border:2px solid red;
+            margin:3%;
+        }
+    
+        button{
+            border:2px solid blue;
+            margin-bottom:3%;
+        }
+    
     
     .bao-img{
         .team-img();
@@ -54,9 +142,35 @@ body{
     flex-direction: column;
     .team-layout();
 
+    @media @mobile{
+        width:100%;
+
+
+    } //heather mobile query end
+
     .heather-content{
 
         .team-content();
+
+        h2{
+            border:2px solid green;
+        }
+    
+        h3{
+            border:2px solid purple;
+            margin:5%;
+        }
+    
+        p{
+            border:2px solid red;
+            margin:3%;
+        }
+    
+        button{
+            border:2px solid blue;
+            margin-bottom:3%;
+        }
+    
 
     .heather-img{
 
@@ -70,8 +184,35 @@ body{
     flex-direction: column;
     .team-layout();
 
+    @media @mobile{
+        width:100%;
+
+
+    } //kerri-ann mobile query end
+
+
     .kerri-ann-content{
         .team-content();
+
+        h2{
+            border:2px solid green;
+        }
+    
+        h3{
+            border:2px solid purple;
+            margin:5%;
+        }
+    
+        p{
+            border:2px solid red;
+            margin:3%;
+        }
+    
+        button{
+            border:2px solid blue;
+            margin-bottom:3%;
+        }
+    
 
 
     .kerri-ann-img{
@@ -86,8 +227,36 @@ body{
     flex-direction: column;
     .team-layout();
 
+    @media @mobile{
+        width:100%;
+
+
+    } //brian mobile query end
+
     .brian-content{
         .team-content();
+
+        h2{
+            border:2px solid green;
+        }
+    
+        h3{
+            border:2px solid purple;
+            margin:5%;
+        }
+    
+        p{
+            border:2px solid red;
+            margin:3%;
+        }
+    
+        button{
+            border:2px solid blue;
+            margin-bottom:3%;
+        }
+    
+
+
     .brian-img{
         
     .team-img();
@@ -116,3 +285,9 @@ button{
     border:2px solid black;
 } //team content button end
 }//team content end
+
+
+.team-foot{
+    width:100%;
+    background-color: rgb(235, 234, 234);
+}//team foot end

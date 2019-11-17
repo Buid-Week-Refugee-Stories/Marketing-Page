@@ -1,0 +1,51 @@
+footer{
+    //   border:2px solid orange;
+       display:flex;
+       .layout(space-evenly, center);
+       width:90%;
+       margin:5%;
+   
+   
+   
+       @media @mobile{
+           width:100%;
+           margin:0;
+           background-color: rgb(235, 234, 234);
+           height:90px;
+           
+           
+   
+       }//footer mobile end
+       .footer-nav{
+           @media only screen and (min-width:501px){
+           display: none !important;
+       } //footer nav desktop end to hide query
+   
+       @media @mobile{
+           font-size:1.5rem;
+           padding:0;
+           width:100%;
+           margin:0;
+   
+           nav {
+            
+               font-size:1.5rem;
+               width: 80%;
+               height:50px;
+               float: right;
+               padding:5%;
+           }
+   
+         .logo-bottom { 
+    border-radius: 30%;
+       float:left;
+       width:20%;
+   
+      
+           } //logo bottom end
+       }//footer nav mobile end
+   
+       }//footer mobile query end
+   
+      
+   } //footer end

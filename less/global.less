@@ -9,11 +9,13 @@
     max-width: 100%;
     
     p{
-        color: @text-color;
-        font-size: @text-size;
-        line-height: 2;
-    }
 
+        
+
+        @media @mobile{
+            line-height: normal;
+    } //p mobile query end
+}
   }
 
   html{

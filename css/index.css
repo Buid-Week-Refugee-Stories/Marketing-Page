@@ -135,10 +135,10 @@ table {
 #container {
   max-width: 100%;
 }
-#container p {
-  color: #0e3c92;
-  font-size: 3rem;
-  line-height: 2;
+@media (max-width:500px) {
+  #container p {
+    line-height: normal;
+  }
 }
 html {
   font-size: 62.5%;
@@ -179,14 +179,50 @@ nav {
   text-align: center;
   padding: 3%;
 }
+@media (max-width:500px) {
+  nav {
+    dislpay: block;
+    font-size: 1.5rem;
+    width: 90%;
+    float: right;
+    padding: 0;
+  }
+}
 nav a {
   margin-left: 7%;
   margin-right: 7%;
 }
+@media (max-width:500px) {
+  nav a {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 0%;
+  }
+}
 .team-nav {
   border: 2px solid green;
-  width: 100%;
-  background-color: #ebeaea;
+  width: 80%;
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  height: 60px;
+  text-align: center;
+  padding: 3%;
+}
+@media (max-width:500px) {
+  .team-nav {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 0;
+    height: 40px;
+  }
+  .team-nav a {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+  }
 }
 .head {
   width: 100%;
@@ -194,11 +230,24 @@ nav a {
   position: fixed;
   display: block;
 }
+@media (max-width:500px) {
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: absolute;
+  }
+}
 .head .logo {
   border-radius: 30%;
   float: right;
   width: 8%;
   margin-right: 5%;
+}
+@media (max-width:500px) {
+  .head .logo {
+    width: 30%;
+  }
 }
 .banner-img {
   background-size: cover;
@@ -206,11 +255,23 @@ nav a {
   height: 70vh;
   margin-top: 5%;
 }
+@media (max-width:500px) {
+  .banner-img {
+    height: 33vh;
+  }
+}
 .intro {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   margin: 5%;
+}
+@media (max-width:500px) {
+  .intro {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .intro .intro-text {
   display: flex;
@@ -218,17 +279,60 @@ nav a {
   align-content: center;
   flex-wrap: wrap;
   padding: 3%;
+  line-height: 2;
+  color: #0e3c92;
+  font-size: 3rem;
 }
 .intro .intro-img {
   border-radius: 20%;
-  width: 50%;
-  margin: 0 auto;
+  width: 45%;
+  height: 550px;
+  margin-top: 10%;
+}
+@media (max-width:500px) {
+  .intro .intro-img {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10%;
+    height: 400px;
+  }
 }
 .video {
+  border: 2px solid green;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   margin: 5%;
+  width: 90%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width:500px) {
+  .video {
+    width: 100%;
+    margin: 0;
+  }
+}
+.video .video-text {
+  line-height: normal;
+  width: 30%;
+  color: #0e3c92;
+}
+@media (max-width:500px) {
+  .video .video-text {
+    width: 100%;
+    margin: 0, auto;
+  }
+}
+.video .youtube {
+  width: 45%;
+  margin: 0;
+}
+@media (max-width:500px) {
+  .video .youtube {
+    width: 100%;
+    margin: 0, auto;
+  }
 }
 .body {
   display: flex;
@@ -236,10 +340,26 @@ nav a {
   align-content: center;
   margin: 5%;
 }
+@media (max-width:500px) {
+  .body {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .body .body-img {
   border-radius: 20%;
-  width: 50%;
-  margin: 0 auto;
+  width: 45%;
+  height: 550px;
+  margin-top: 10%;
+}
+@media (max-width:500px) {
+  .body .body-img {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10%;
+    height: 400px;
+  }
 }
 .body .body-text {
   display: flex;
@@ -247,6 +367,14 @@ nav a {
   align-content: center;
   flex-wrap: wrap;
   padding: 3%;
+  line-height: 2;
+  color: #0e3c92;
+  font-size: 3rem;
+}
+@media (max-width:500px) {
+  .body .body-text {
+    line-height: normal;
+  }
 }
 .bottom-img {
   width: 90%;
@@ -255,47 +383,81 @@ nav a {
   margin-right: 5%;
   border-radius: 3%;
 }
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  width: 90%;
-  margin: 5%;
+@media (max-width:500px) {
+  .bottom-img {
+    display: none;
+  }
 }
-footer .help {
-  width: 80%;
+.help {
+  width: 100%;
   font-size: 2rem;
-  text-align: center;
+  margin: 0;
 }
-footer .team-link {
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
+@media (max-width:500px) {
+  .help {
+    width: 100%;
+  }
+}
+.help ul {
+  line-height: 2;
   width: 50%;
-  padding: 5%;
+}
+.help .team-link {
+  width: 100%;
   font-size: 3rem;
   text-align: center;
 }
-footer ul {
-  line-height: 2;
+@media (max-width:500px) {
+  .help .team-link {
+    margin-top: 3%;
+    padding: 0;
+    font-size: 2rem;
+    border: 2px dashed gray;
+  }
 }
 body {
-  border: 2px solid black;
-  background-image: url("https://unsplash.com/photos/r6PVGAhQeW0");
+  border: 2px solid blue;
+}
+.team-head {
+  width: 100%;
+  background-color: #ebeaea;
+}
+.logo {
+  border-radius: 30%;
+  float: right;
+  width: 8%;
+  margin-right: 5%;
+}
+@media (max-width:500px) {
+  .logo {
+    width: 20%;
+  }
 }
 .header {
   display: inline-block;
   text-align: center;
   margin: 2%;
 }
+@media (max-width:500px) {
+  .header {
+    border: 2px solid green;
+    width: 100%;
+    margin: 0;
+  }
+}
 .jasmine {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .jasmine {
+    width: 100%;
+  }
 }
 .jasmine .jasmine-content {
   border: 2px dashed #D7DDE1;
@@ -313,18 +475,39 @@ body {
 .jasmine .jasmine-content button {
   border: 2px solid black;
 }
-.jasmine .jasmine-img {
-  width: 50%;
+.jasmine .jasmine-content h2 {
+  border: 2px solid green;
+}
+.jasmine .jasmine-content h3 {
+  border: 2px solid purple;
+  margin: 5%;
+}
+.jasmine .jasmine-content p {
+  border: 2px solid red;
+  margin: 3%;
+}
+.jasmine .jasmine-content button {
+  border: 2px solid blue;
+  margin-bottom: 3%;
+}
+.jasmine .jasmine-content .jasmine-img {
+  width: 40%;
   border-radius: 50%;
+  height: 250px;
 }
 .bao {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .bao {
+    width: 100%;
+  }
 }
 .bao .bao-content {
   border: 2px dashed #D7DDE1;
@@ -342,6 +525,21 @@ body {
 .bao .bao-content button {
   border: 2px solid black;
 }
+.bao .bao-content h2 {
+  border: 2px solid green;
+}
+.bao .bao-content h3 {
+  border: 2px solid purple;
+  margin: 5%;
+}
+.bao .bao-content p {
+  border: 2px solid red;
+  margin: 3%;
+}
+.bao .bao-content button {
+  border: 2px solid blue;
+  margin-bottom: 3%;
+}
 .bao .bao-content .bao-img {
   border-radius: 50%;
   width: 45%;
@@ -351,9 +549,14 @@ body {
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .heather {
+    width: 100%;
+  }
 }
 .heather .heather-content {
   border: 2px dashed #D7DDE1;
@@ -371,6 +574,21 @@ body {
 .heather .heather-content button {
   border: 2px solid black;
 }
+.heather .heather-content h2 {
+  border: 2px solid green;
+}
+.heather .heather-content h3 {
+  border: 2px solid purple;
+  margin: 5%;
+}
+.heather .heather-content p {
+  border: 2px solid red;
+  margin: 3%;
+}
+.heather .heather-content button {
+  border: 2px solid blue;
+  margin-bottom: 3%;
+}
 .heather .heather-content .heather-img {
   border-radius: 50%;
   width: 45%;
@@ -380,9 +598,14 @@ body {
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .kerri-ann {
+    width: 100%;
+  }
 }
 .kerri-ann .kerri-ann-content {
   border: 2px dashed #D7DDE1;
@@ -400,6 +623,21 @@ body {
 .kerri-ann .kerri-ann-content button {
   border: 2px solid black;
 }
+.kerri-ann .kerri-ann-content h2 {
+  border: 2px solid green;
+}
+.kerri-ann .kerri-ann-content h3 {
+  border: 2px solid purple;
+  margin: 5%;
+}
+.kerri-ann .kerri-ann-content p {
+  border: 2px solid red;
+  margin: 3%;
+}
+.kerri-ann .kerri-ann-content button {
+  border: 2px solid blue;
+  margin-bottom: 3%;
+}
 .kerri-ann .kerri-ann-content .kerri-ann-img {
   width: 48%;
 }
@@ -408,9 +646,14 @@ body {
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .brian {
+    width: 100%;
+  }
 }
 .brian .brian-content {
   border: 2px dashed #D7DDE1;
@@ -428,6 +671,21 @@ body {
 .brian .brian-content button {
   border: 2px solid black;
 }
+.brian .brian-content h2 {
+  border: 2px solid green;
+}
+.brian .brian-content h3 {
+  border: 2px solid purple;
+  margin: 5%;
+}
+.brian .brian-content p {
+  border: 2px solid red;
+  margin: 3%;
+}
+.brian .brian-content button {
+  border: 2px solid blue;
+  margin-bottom: 3%;
+}
 .brian .brian-content .brian-img {
   border-radius: 50%;
   width: 45%;
@@ -444,4 +702,48 @@ body {
 }
 .team-content button {
   border: 2px solid black;
+}
+.team-foot {
+  width: 100%;
+  background-color: #ebeaea;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 90%;
+  margin: 5%;
+}
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+    margin: 0;
+    background-color: #ebeaea;
+    height: 90px;
+  }
+}
+@media only screen and (min-width: 501px) {
+  footer .footer-nav {
+    display: none !important;
+  }
+}
+@media (max-width:500px) {
+  footer .footer-nav {
+    font-size: 1.5rem;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  footer .footer-nav nav {
+    font-size: 1.5rem;
+    width: 80%;
+    height: 50px;
+    float: right;
+    padding: 5%;
+  }
+  footer .footer-nav .logo-bottom {
+    border-radius: 30%;
+    float: left;
+    width: 20%;
+  }
 }
