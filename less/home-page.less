@@ -36,10 +36,11 @@
 .intro{
 border: 2px solid blue;
 .layout(space-evenly, center);
+margin:5%;
 
 .intro-text{
     border:2px solid darkblue;
-    .text(space-around, center);
+    .layout(space-around, center);
     flex-wrap:wrap;
 
 } //intro-text end
@@ -55,12 +56,14 @@ border: 2px solid blue;
 .video{
     border:2px solid green;
     .layout(space-around, center);
+    margin:5%;
     
 } //video div end
 
 .body{
     border:2px solid purple;
     .layout(space-evenly, center);
+    margin:5%;
     
 
   .body-img{
@@ -71,7 +74,7 @@ border: 2px solid blue;
 
   .body-text{
       border: 2px solid yellow;
-      .text(space-around, center);
+      .layout(space-evenly, center);
       flex-wrap:wrap;
   }
 
@@ -83,26 +86,33 @@ border: 2px solid blue;
     width:90%;
     height: 50vh;
     margin-left:5%;
-    margin-right:5%
+    margin-right:5%;
+    border-radius:3%;
 }
 
 footer{
     border:2px solid orange;
-    .layout(space-evenly, center);
-    width:100%;
-
-    nav {
-    border:2px solid blue;
-    width:80%;
-    margin:5%;
     display:flex;
     .layout(space-evenly, center);
+    width:90%;
+    margin:5%;
 
-    a{
+    .help{
+
+        width:80%;
+        font-size: 2.0rem;
+        text-align: center;
+    }
         
-        margin-left:7%;
-        margin-right:7%;
+    .team-page{
+        border:2px solid blue;
+        .layout(space-around, flex-end);
+        width:50%;
+        padding:5%;
+        font-size: 3rem;
+        text-align: center;
+        }
 
-    }//nav links end
-    } //nav end
+
+  
 } //footer end

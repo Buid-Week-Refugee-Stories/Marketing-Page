@@ -140,15 +140,36 @@ html {
 }
 h1 {
   color: #C12E29;
-  font-size: 10rem;
+  font-size: 12rem;
   text-align: center;
 }
 h2 {
   color: #81B3B2;
-  font-size: 3.5rem;
+  font-size: 7.5rem;
+  border: 2px solid black;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+h3 {
+  font-size: 5rem;
 }
 p {
+  color: #252A33;
+  font-size: 3rem;
+  border: 2px solid red;
+  line-height: 2;
+}
+button {
+  width: 50%;
+  background-color: #D4AEA8;
+  color: #8CA744;
   font-size: 2rem;
+  border-radius: 50%;
+  height: 60px;
+}
+button:hover {
+  background-color: #4d004d;
+  color: #D4AEA8;
 }
 nav {
   width: 80%;
@@ -187,6 +208,7 @@ nav a {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  margin: 5%;
 }
 .intro .intro-text {
   border: 2px solid darkblue;
@@ -206,12 +228,14 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-content: center;
+  margin: 5%;
 }
 .body {
   border: 2px solid purple;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  margin: 5%;
 }
 .body .body-img {
   border: 2px solid goldenrod;
@@ -222,7 +246,7 @@ nav a {
 .body .body-text {
   border: 2px solid yellow;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -232,23 +256,87 @@ nav a {
   height: 50vh;
   margin-left: 5%;
   margin-right: 5%;
+  border-radius: 3%;
 }
 footer {
   border: 2px solid orange;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  width: 90%;
+  margin: 5%;
+}
+footer .help {
+  width: 80%;
+  font-size: 2rem;
+  text-align: center;
+}
+footer .team-page {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  width: 50%;
+  padding: 5%;
+  font-size: 3rem;
+  text-align: center;
+}
+.team-nav {
+  border: 2px solid green;
   width: 100%;
 }
-footer nav {
-  border: 2px solid blue;
-  width: 80%;
-  margin: 5%;
+.header {
+  border: 3px solid blue;
+  display: inline-block;
+  text-align: center;
+  margin: 2%;
+}
+.jasmine {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5%;
+  border: 2px dashed #D7DDE1;
 }
-footer nav a {
-  margin-left: 7%;
-  margin-right: 7%;
+.bao {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5%;
+  border: 2px dashed #D7DDE1;
+}
+.heather {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5%;
+  border: 2px dashed #D7DDE1;
+}
+.kerri-ann {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5%;
+  border: 2px dashed #D7DDE1;
+}
+.brian {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5%;
+  border: 2px dashed #D7DDE1;
+}
+.team-foot {
+  width: 100%;
+  border: 2px solid black;
 }

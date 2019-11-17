@@ -3,19 +3,32 @@
     justify-content: @justify;
     align-content: @align;
 
-}  //main body layout display
+}  //layout display
 
-.text(@justify, @align){
-    display:flex;
-    justify-content: @justify;
-    align-content: @align;
-
-} //layout display for text in divs
+.team-layout(){
+    width:80%;
+    margin:5%;
+    border:2px dashed #D7DDE1;
+}
 
 .img-style(){
     border-radius: 20%;
     width: 50%;
     margin: 0 auto;
 
+} //body images styling main page
 
+.btn-style(@bg-color:#D4AEA8, @font-color: #8CA744, @font-size:2rem, @width: 50% ){
+
+    width: @width;
+    background-color:@bg-color;
+    color:@font-color;
+    font-size:@font-size;
+    border-radius:50%;
+    height:60px;
+
+    &:hover{
+        background-color: darken(purple, 10%);
+        color: @bg-color;
+    }
 }
