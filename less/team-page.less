@@ -1,49 +1,118 @@
-.team-nav{
-    border:2px solid green;
-    width:100%;
+
+
+body{
+    border:2px solid black;
+    background-image: url("https://unsplash.com/photos/r6PVGAhQeW0");
 }
 
+
 .header{
-    border:3px solid blue;
+    //border:3px solid blue;
     display:inline-block;
     text-align: center;
     margin:2%;
-}
+} //header end
 
 
 .jasmine{
     .layout(space-evenly, center);
     flex-direction: column;
     .team-layout();
+
+    .jasmine-content{
+        .team-content();
+    } //jasmine content end
+    
+    .jasmine-img{
+        width: 50%;
+        border-radius:50%;
+    }
+
+    
     
 } //jasmine div end
 
 .bao{
-    .layout(space-evenly, center);
+    .layout(space-between, center);
     flex-direction: column;
     .team-layout();
+
+    .bao-content{
+
+        .team-content();
     
+    .bao-img{
+        .team-img();
+ }//bao img end
+
+} //bao content end
+
 } //bao div end
 
 .heather{
     .layout(space-evenly, center);
     flex-direction: column;
     .team-layout();
+
+    .heather-content{
+
+        .team-content();
+
+    .heather-img{
+
+    .team-img();
+    } //heather img end
+} //heather content end
 } //heather div end
 
 .kerri-ann{
     .layout(space-evenly, center);
     flex-direction: column;
     .team-layout();
+
+    .kerri-ann-content{
+        .team-content();
+
+
+    .kerri-ann-img{
+    width: 48%;
+    } //kerri-ann img end
+}//kerri-ann content end
 } //keri-ann div end
 
 .brian{
+    
     .layout(space-evenly, center);
     flex-direction: column;
     .team-layout();
+
+    .brian-content{
+        .team-content();
+    .brian-img{
+        
+    .team-img();
+    } //brian img end
+} //brian content end
 } //brian div end
 
 .team-foot{
     width:100%;
-    border:2px solid black;
+   // border:2px solid black;
 }
+
+
+.team-content {
+
+
+    h2{
+        margin:5%;
+    }
+    
+p {
+    color: @team-color;
+    font-size: @team-size;
+}
+button{
+    border:2px solid black;
+} //team content button end
+}//team content end

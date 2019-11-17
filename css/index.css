@@ -135,6 +135,11 @@ table {
 #container {
   max-width: 100%;
 }
+#container p {
+  color: #0e3c92;
+  font-size: 3rem;
+  line-height: 2;
+}
 html {
   font-size: 62.5%;
 }
@@ -146,18 +151,12 @@ h1 {
 h2 {
   color: #81B3B2;
   font-size: 7.5rem;
-  border: 2px solid black;
   margin-bottom: 5%;
   margin-top: 3%;
 }
 h3 {
   font-size: 5rem;
-}
-p {
-  color: #252A33;
-  font-size: 3rem;
-  border: 2px solid red;
-  line-height: 2;
+  color: #81B325;
 }
 button {
   width: 50%;
@@ -184,6 +183,11 @@ nav a {
   margin-left: 7%;
   margin-right: 7%;
 }
+.team-nav {
+  border: 2px solid green;
+  width: 100%;
+  background-color: #ebeaea;
+}
 .head {
   width: 100%;
   background-color: #ebeaea;
@@ -197,61 +201,54 @@ nav a {
   margin-right: 5%;
 }
 .banner-img {
-  border: 2px solid black;
   background-size: cover;
   width: 100%;
   height: 70vh;
   margin-top: 5%;
 }
 .intro {
-  border: 2px solid blue;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   margin: 5%;
 }
 .intro .intro-text {
-  border: 2px solid darkblue;
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
+  padding: 3%;
 }
 .intro .intro-img {
-  border: 2px solid turquoise;
   border-radius: 20%;
   width: 50%;
   margin: 0 auto;
 }
 .video {
-  border: 2px solid green;
   display: flex;
   justify-content: space-around;
   align-content: center;
   margin: 5%;
 }
 .body {
-  border: 2px solid purple;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   margin: 5%;
 }
 .body .body-img {
-  border: 2px solid goldenrod;
   border-radius: 20%;
   width: 50%;
   margin: 0 auto;
 }
 .body .body-text {
-  border: 2px solid yellow;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
+  padding: 3%;
 }
 .bottom-img {
-  border: 2px solid olivedrab;
   width: 90%;
   height: 50vh;
   margin-left: 5%;
@@ -259,7 +256,6 @@ nav a {
   border-radius: 3%;
 }
 footer {
-  border: 2px solid orange;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -271,8 +267,7 @@ footer .help {
   font-size: 2rem;
   text-align: center;
 }
-footer .team-page {
-  border: 2px solid blue;
+footer .team-link {
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
@@ -281,12 +276,14 @@ footer .team-page {
   font-size: 3rem;
   text-align: center;
 }
-.team-nav {
-  border: 2px solid green;
-  width: 100%;
+footer ul {
+  line-height: 2;
+}
+body {
+  border: 2px solid black;
+  background-image: url("https://unsplash.com/photos/r6PVGAhQeW0");
 }
 .header {
-  border: 3px solid blue;
   display: inline-block;
   text-align: center;
   margin: 2%;
@@ -296,47 +293,155 @@ footer .team-page {
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 5%;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.jasmine .jasmine-content {
   border: 2px dashed #D7DDE1;
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+.jasmine .jasmine-content h2 {
+  margin: 5%;
+}
+.jasmine .jasmine-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.jasmine .jasmine-content button {
+  border: 2px solid black;
+}
+.jasmine .jasmine-img {
+  width: 50%;
+  border-radius: 50%;
 }
 .bao {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 5%;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.bao .bao-content {
   border: 2px dashed #D7DDE1;
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+.bao .bao-content h2 {
+  margin: 5%;
+}
+.bao .bao-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.bao .bao-content button {
+  border: 2px solid black;
+}
+.bao .bao-content .bao-img {
+  border-radius: 50%;
+  width: 45%;
 }
 .heather {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 5%;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.heather .heather-content {
   border: 2px dashed #D7DDE1;
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+.heather .heather-content h2 {
+  margin: 5%;
+}
+.heather .heather-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.heather .heather-content button {
+  border: 2px solid black;
+}
+.heather .heather-content .heather-img {
+  border-radius: 50%;
+  width: 45%;
 }
 .kerri-ann {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 5%;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.kerri-ann .kerri-ann-content {
   border: 2px dashed #D7DDE1;
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+.kerri-ann .kerri-ann-content h2 {
+  margin: 5%;
+}
+.kerri-ann .kerri-ann-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.kerri-ann .kerri-ann-content button {
+  border: 2px solid black;
+}
+.kerri-ann .kerri-ann-content .kerri-ann-img {
+  width: 48%;
 }
 .brian {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 5%;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.brian .brian-content {
   border: 2px dashed #D7DDE1;
+  width: 90%;
+  margin: 5%;
+  text-align: center;
+}
+.brian .brian-content h2 {
+  margin: 5%;
+}
+.brian .brian-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.brian .brian-content button {
+  border: 2px solid black;
+}
+.brian .brian-content .brian-img {
+  border-radius: 50%;
+  width: 45%;
 }
 .team-foot {
   width: 100%;
+}
+.team-content h2 {
+  margin: 5%;
+}
+.team-content p {
+  color: #C12E29;
+  font-size: 4rem;
+}
+.team-content button {
   border: 2px solid black;
 }
