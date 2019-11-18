@@ -27,7 +27,7 @@
 } //mobile query styling
 
 .team-content(){
-    border:2px dashed #D7DDE1;
+    border:2px solid black;
         width:90%;
         margin:5%;
         text-align: center;
@@ -39,7 +39,34 @@
     
 }//team page image styling
 
-.btn-style(@bg-color:#D4AEA8, @font-color: #8CA744, @font-size:2rem, @width: 50% ){
+
+.home-back(){
+
+
+    background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}//home background animation
+
+
+
+
+
+
+.btn-style(@bg-color:#D4AEA8, @font-color: rgb(0, 0, 0), @font-size:2rem, @width: 50% ){
 
     width: @width;
     background-color:@bg-color;
@@ -48,8 +75,20 @@
     border-radius:50%;
     height:60px;
 
-    &:hover{
-        background-color: darken(purple, 10%);
-        color: @bg-color;
-    }
+
+    animation: colorchange 5s infinite;
+
+   -webkit-animation:colorchange 5s infinite;
+} //button end
+@keyframes colorchange{
+    0%{background:#d7dde1;}
+    50%{background:#D4AEA8;}
+    100%{background:orchid;}
+}
+@-webkit-keyframes colorchange
+{
+    0%{background:#d7dde1;}
+    50%{background:#D4AEA8;}
+    100%{background:orchid;}
+ //button animation end
 }

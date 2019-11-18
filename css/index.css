@@ -1,3 +1,47 @@
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 91% 0%;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 91% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 91% 0%;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 91% 0%;
+  }
+}
+@keyframes colorchange {
+  0% {
+    background: #d7dde1;
+  }
+  50% {
+    background: #D4AEA8;
+  }
+  100% {
+    background: orchid;
+  }
+}
+@-webkit-keyframes colorchange {
+  0% {
+    background: #d7dde1;
+  }
+  50% {
+    background: #D4AEA8;
+  }
+  100% {
+    background: orchid;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,11 +176,8 @@ table {
   padding: 0;
   max-width: 100%;
 }
-#container {
-  max-width: 100%;
-}
 @media (max-width:500px) {
-  #container p {
+  p {
     line-height: normal;
   }
 }
@@ -161,14 +202,12 @@ h3 {
 button {
   width: 50%;
   background-color: #D4AEA8;
-  color: #8CA744;
+  color: #000000;
   font-size: 2rem;
   border-radius: 50%;
   height: 60px;
-}
-button:hover {
-  background-color: #4d004d;
-  color: #D4AEA8;
+  animation: colorchange 5s infinite;
+  -webkit-animation: colorchange 5s infinite;
 }
 nav {
   width: 80%;
@@ -181,7 +220,6 @@ nav {
 }
 @media (max-width:500px) {
   nav {
-    dislpay: block;
     font-size: 1.5rem;
     width: 90%;
     float: right;
@@ -196,7 +234,7 @@ nav a {
   nav a {
     width: 100%;
     margin-left: 3%;
-    margin-right: 0.5%;
+    margin-right: 0;
   }
 }
 .team-nav {
@@ -221,14 +259,18 @@ nav a {
     margin-bottom: 0;
   }
 }
+#container {
+  background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
 .head {
   width: 100%;
-  background-color: #ebeaea;
-  position: fixed;
-  display: block;
 }
 @media (max-width:500px) {
   .head {
+    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -238,10 +280,8 @@ nav a {
 .head .logo {
   border-radius: 30%;
   float: right;
-  width: 7%;
+  width: 8%;
   margin-right: 5%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
 }
 @media (max-width:500px) {
   .head .logo {
@@ -252,7 +292,6 @@ nav a {
   background-size: cover;
   width: 100%;
   height: 70vh;
-  margin-top: 5%;
 }
 @media (max-width:500px) {
   .banner-img {
@@ -405,7 +444,6 @@ nav a {
   width: 100%;
   font-size: 3rem;
   text-align: center;
-  margin: 3%;
 }
 @media (max-width:500px) {
   .help .team-link {
@@ -413,15 +451,13 @@ nav a {
     padding: 0;
     font-size: 2rem;
     border: 2px dashed gray;
-    margin: 0;
   }
 }
-body {
-  border: 2px solid blue;
+#team-container {
+  background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
 }
 .team-head {
   width: 100%;
-  background-color: #ebeaea;
 }
 .logo {
   border-radius: 30%;
@@ -461,7 +497,7 @@ body {
   }
 }
 .jasmine .jasmine-content {
-  border: 2px dashed #D7DDE1;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   text-align: center;
@@ -507,7 +543,7 @@ body {
   }
 }
 .bao .bao-content {
-  border: 2px dashed #D7DDE1;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   text-align: center;
@@ -553,7 +589,7 @@ body {
   }
 }
 .heather .heather-content {
-  border: 2px dashed #D7DDE1;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   text-align: center;
@@ -599,7 +635,7 @@ body {
   }
 }
 .kerri-ann .kerri-ann-content {
-  border: 2px dashed #D7DDE1;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   text-align: center;
@@ -627,7 +663,8 @@ body {
   margin-bottom: 3%;
 }
 .kerri-ann .kerri-ann-content .kerri-ann-img {
-  width: 48%;
+  border-radius: 50%;
+  width: 45%;
 }
 .brian {
   display: flex;
@@ -644,7 +681,7 @@ body {
   }
 }
 .brian .brian-content {
-  border: 2px dashed #D7DDE1;
+  border: 2px solid black;
   width: 90%;
   margin: 5%;
   text-align: center;
@@ -690,7 +727,6 @@ body {
 }
 .team-foot {
   width: 100%;
-  background-color: #ebeaea;
 }
 footer {
   display: flex;
