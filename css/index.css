@@ -196,24 +196,21 @@ nav a {
   nav a {
     width: 100%;
     margin-left: 3%;
-    margin-right: 0%;
+    margin-right: 0.5%;
   }
 }
 .team-nav {
-  border: 2px solid green;
   width: 80%;
   display: inline-block;
   font-size: 2rem;
   text-decoration: none;
   height: 60px;
   text-align: center;
-  padding: 3%;
 }
 @media (max-width:500px) {
   .team-nav {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
-    padding: 3%;
     margin-bottom: 0;
     height: 40px;
   }
@@ -241,8 +238,10 @@ nav a {
 .head .logo {
   border-radius: 30%;
   float: right;
-  width: 8%;
+  width: 7%;
   margin-right: 5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 @media (max-width:500px) {
   .head .logo {
@@ -406,6 +405,7 @@ nav a {
   width: 100%;
   font-size: 3rem;
   text-align: center;
+  margin: 3%;
 }
 @media (max-width:500px) {
   .help .team-link {
@@ -413,6 +413,7 @@ nav a {
     padding: 0;
     font-size: 2rem;
     border: 2px dashed gray;
+    margin: 0;
   }
 }
 body {
@@ -425,8 +426,9 @@ body {
 .logo {
   border-radius: 30%;
   float: right;
-  width: 8%;
+  width: 6%;
   margin-right: 5%;
+  margin-top: 0.5%;
 }
 @media (max-width:500px) {
   .logo {
@@ -440,7 +442,6 @@ body {
 }
 @media (max-width:500px) {
   .header {
-    border: 2px solid green;
     width: 100%;
     margin: 0;
   }
@@ -479,21 +480,17 @@ body {
   border: 2px solid green;
 }
 .jasmine .jasmine-content h3 {
-  border: 2px solid purple;
   margin: 5%;
 }
 .jasmine .jasmine-content p {
-  border: 2px solid red;
   margin: 3%;
 }
 .jasmine .jasmine-content button {
-  border: 2px solid blue;
   margin-bottom: 3%;
 }
 .jasmine .jasmine-content .jasmine-img {
-  width: 40%;
   border-radius: 50%;
-  height: 250px;
+  width: 45%;
 }
 .bao {
   display: flex;
@@ -529,15 +526,12 @@ body {
   border: 2px solid green;
 }
 .bao .bao-content h3 {
-  border: 2px solid purple;
   margin: 5%;
 }
 .bao .bao-content p {
-  border: 2px solid red;
   margin: 3%;
 }
 .bao .bao-content button {
-  border: 2px solid blue;
   margin-bottom: 3%;
 }
 .bao .bao-content .bao-img {
@@ -578,15 +572,12 @@ body {
   border: 2px solid green;
 }
 .heather .heather-content h3 {
-  border: 2px solid purple;
   margin: 5%;
 }
 .heather .heather-content p {
-  border: 2px solid red;
   margin: 3%;
 }
 .heather .heather-content button {
-  border: 2px solid blue;
   margin-bottom: 3%;
 }
 .heather .heather-content .heather-img {
@@ -627,15 +618,12 @@ body {
   border: 2px solid green;
 }
 .kerri-ann .kerri-ann-content h3 {
-  border: 2px solid purple;
   margin: 5%;
 }
 .kerri-ann .kerri-ann-content p {
-  border: 2px solid red;
   margin: 3%;
 }
 .kerri-ann .kerri-ann-content button {
-  border: 2px solid blue;
   margin-bottom: 3%;
 }
 .kerri-ann .kerri-ann-content .kerri-ann-img {
@@ -675,15 +663,12 @@ body {
   border: 2px solid green;
 }
 .brian .brian-content h3 {
-  border: 2px solid purple;
   margin: 5%;
 }
 .brian .brian-content p {
-  border: 2px solid red;
   margin: 3%;
 }
 .brian .brian-content button {
-  border: 2px solid blue;
   margin-bottom: 3%;
 }
 .brian .brian-content .brian-img {
