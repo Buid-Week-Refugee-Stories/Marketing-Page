@@ -46,16 +46,16 @@
     background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
 background-size: 600% 600%;
 
--webkit-animation: AnimationName 20s ease infinite;
-animation: AnimationName 20s ease infinite;
+-webkit-animation: backAni 20s ease infinite;
+animation: backAni 20s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes backAni {
     0%{background-position:91% 0%}
     50%{background-position:10% 100%}
     100%{background-position:91% 0%}
 }
-@keyframes AnimationName {
+@keyframes backAni {
     0%{background-position:91% 0%}
     50%{background-position:10% 100%}
     100%{background-position:91% 0%}
@@ -66,29 +66,27 @@ animation: AnimationName 20s ease infinite;
 
 
 
-.btn-style(@bg-color:#D4AEA8, @font-color: rgb(0, 0, 0), @font-size:2rem, @width: 50% ){
+.btn-style(){
 
-    width: @width;
-    background-color:@bg-color;
-    color:@font-color;
-    font-size:@font-size;
-    border-radius:50%;
-    height:60px;
-
-
-    animation: colorchange 5s infinite;
-
-   -webkit-animation:colorchange 5s infinite;
-} //button end
-@keyframes colorchange{
-    0%{background:#d7dde1;}
-    50%{background:#D4AEA8;}
-    100%{background:orchid;}
-}
-@-webkit-keyframes colorchange
-{
-    0%{background:#d7dde1;}
-    50%{background:#D4AEA8;}
-    100%{background:orchid;}
- //button animation end
-}
+        border: none;
+        background: #8Ca744;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+        font-size:2rem;
+        
+        
+        &:hover {
+            color: #404040 !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px;
+            background: none;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(3, 3, 3, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.3s ease 0s;
+            }
+        }

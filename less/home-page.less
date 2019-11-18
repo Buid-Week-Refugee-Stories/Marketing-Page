@@ -66,6 +66,7 @@ margin:5%;
     flex-direction:column;
     width:100%;
     margin: 0 auto;
+    text-align:center;
 }//intro mobile query end
 
 .intro-text{
@@ -93,7 +94,7 @@ margin:5%;
 } //intro div end
 
 .video{
-   border:2px solid green;
+   
     .layout(space-between, center);
     margin:5%;
     width:90%;
@@ -103,29 +104,40 @@ margin:5%;
     @media @mobile{
         width:100%;
         margin:0;
+        
     }//mobile video div end
 
     .video-text{
         line-height: normal;
-        width:70%;
+        width:80%;
         color: @text-color;
         font-family: @text-font;
         font-size: 2rem;
+        margin-bottom:3%;
+        border:2px dotted #E0bE12;
+        padding:3%;
 
         @media @mobile{
             width:100%;
-            margin:0, auto;
+            margin-top:5%;
+    
+            margin-bottom: 2%;
+            padding:0;
+            
         } //mobile video text end
         
     }//video text end
 
     .youtube{
-        width:45%;
-        margin:0;
+        width:100%;
+        margin:0 auto;
+        border:2px solid green;
+        
 
         @media @mobile{
         width:100%;
-        margin:0, auto;
+        //margin:0, auto;
+        border-bottom: 2px dashed gray;
 
         }//mobile youtube video end
     } //youtube video end
@@ -142,6 +154,7 @@ margin:5%;
         flex-direction:column-reverse;
         width:100%;
     margin: 0 auto;
+    text-align:center;
     }//body mobile query end
     
 
@@ -169,24 +182,15 @@ margin:5%;
           line-height: normal;
    
       }//body-text mobile end
-  }
+  } //body-text end
+
+
+  .story-btn button{
+    .btn-style();
+}
+
 
 } //body div end
-;
-.bottom-img{
-  //  border:2px solid olivedrab;
-
-    width:90%;
-    height: 50vh;
-    margin-left:5%;
-    margin-right:5%;
-    border-radius:3%;
-
-    @media @mobile{
-        display:none;
-        
-    }//bottom img mobile query end
-}
 
 
 
@@ -195,18 +199,27 @@ margin:5%;
 
     width:100%;
     font-size: 2.0rem;
-    
     margin:0;
-
+    
 
     @media @mobile {
         width:100%;
+        
 
 }//help mobile end
      
 ul{
-line-height: 2;
-width:50%;
+line-height: 3;
+width:90%;
+border:2px solid #8CA744;
+text-decoration-line: none;
+height:200px;
+margin:5%;
+
+li{
+    
+    margin-left:5%;
+}
 
 }//list end
 
