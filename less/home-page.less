@@ -16,10 +16,12 @@
     //display:block;
 
     @media @mobile{
-        border:2px solid blue;
+        
         display: flex;
         .layout(space-between, center);
         position:absolute;
+        background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
+        height:45px;
 
     } //head mobile query  end
 
@@ -74,6 +76,7 @@ margin:5%;
     line-height:2;
     color: @text-color;
         font-size: @text-size;
+        font-family: @text-font;
 
 } //intro-text end
 
@@ -104,8 +107,10 @@ margin:5%;
 
     .video-text{
         line-height: normal;
-        width:30%;
+        width:70%;
         color: @text-color;
+        font-family: @text-font;
+        font-size: 2rem;
 
         @media @mobile{
             width:100%;
@@ -158,6 +163,7 @@ margin:5%;
       line-height: 2;
       color: @text-color;
         font-size: @text-size;
+        font-family: @text-font;
 
       @media @mobile{
           line-height: normal;
@@ -210,6 +216,17 @@ width:50%;
     width:100%;
     font-size: 3rem;
     text-align: center;
+    
+
+    a{
+    text-decoration-line: none;
+    margin-bottom:5%;
+    font-family:'Sedgwick Ave Display', cursive;
+
+    &:hover{
+        color:#252A33;
+    }
+    }
     
 
     @media @mobile{
