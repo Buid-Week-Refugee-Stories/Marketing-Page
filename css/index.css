@@ -157,6 +157,7 @@ table {
 @media (max-width:500px) {
   p {
     line-height: normal;
+    font-size: 2rem;
   }
 }
 html {
@@ -168,22 +169,44 @@ h1 {
   text-align: center;
   font-family: 'Sedgwick Ave', cursive;
 }
+@media (max-width:500px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
 h2 {
   color: #81B3B2;
   font-size: 7.5rem;
   font-family: 'Baloo Bhaijaan', cursive;
   margin-bottom: 5%;
   margin-top: 3%;
+  text-align: center;
+}
+@media (max-width:500px) {
+  h2 {
+    font-size: 5rem;
+  }
 }
 h3 {
   font-size: 5rem;
   color: #81B325;
+  text-align: center;
+}
+@media (max-width:500px) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 h4 {
   font-size: 3rem;
   font-family: 'Kavivanar', cursive;
   color: #81B3B2;
   font-size: 7.5rem;
+}
+@media (max-width:500px) {
+  h4 {
+    font-size: 4rem;
+  }
 }
 nav {
   width: 80%;
@@ -208,6 +231,8 @@ nav a {
   margin-right: 7%;
   font-family: 'Vibes', cursive;
   text-decoration-line: none;
+  color: #8CA744;
+  font-weight: 600;
 }
 @media (max-width:500px) {
   nav a {
@@ -269,9 +294,10 @@ nav a {
   }
 }
 .banner-img {
-  background-size: cover;
+  background-size: contain;
   width: 100%;
-  height: 70vh;
+  height: 66vh;
+  border-radius: 2%;
 }
 @media (max-width:500px) {
   .banner-img {
@@ -279,6 +305,7 @@ nav a {
   }
 }
 .intro {
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -299,9 +326,9 @@ nav a {
   flex-wrap: wrap;
   padding: 3%;
   line-height: 2;
-  color: #0e3c92;
+  color: #252A33;
   font-size: 3rem;
-  font-family: 'Gaegu', cursive;
+  font-family: 'Athiti', sans-serif;
 }
 .intro .intro-img {
   border-radius: 20%;
@@ -321,45 +348,46 @@ nav a {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  margin: 5%;
-  width: 90%;
+  margin-left: 8%;
+  width: 80%;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid blue;
+  border: 2px dotted #E0bE12;
+  margin-bottom: 3%;
 }
 @media (max-width:500px) {
   .video {
     width: 100%;
     margin: 0;
+    border: none;
   }
 }
 .video .video-text {
   line-height: normal;
   width: 80%;
-  color: #0e3c92;
-  font-family: 'Gaegu', cursive;
+  color: #252A33;
+  font-family: 'Athiti', sans-serif;
   font-size: 2rem;
-  margin: 0 auto;
-  border: 2px dotted #E0bE12;
+  margin-left: 15%;
+  text-align: center;
   padding: 3%;
 }
 @media (max-width:500px) {
   .video .video-text {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    padding: 0;
+    margin: 0;
   }
 }
 .video .youtube {
-  width: 90%;
-  margin: 0 auto;
-  border: 2px solid green;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 30%;
 }
 @media (max-width:500px) {
   .video .youtube {
     width: 100%;
-    border-bottom: 2px dashed gray;
+    margin-left: 0;
   }
 }
 .body {
@@ -367,6 +395,7 @@ nav a {
   justify-content: space-evenly;
   align-content: center;
   margin: 5%;
+  width: 80%;
 }
 @media (max-width:500px) {
   .body {
@@ -397,9 +426,9 @@ nav a {
   flex-wrap: wrap;
   padding: 3%;
   line-height: 2;
-  color: #0e3c92;
+  color: #252A33;
   font-size: 3rem;
-  font-family: 'Gaegu', cursive;
+  font-family: 'Athiti', sans-serif;
 }
 @media (max-width:500px) {
   .body .body-text {
@@ -407,8 +436,8 @@ nav a {
   }
 }
 .body .story-btn button {
-  border: none;
-  background: #8Ca744;
+  border: 1px dotted dimgray ;
+  background: none;
   color: #ffffff !important;
   font-weight: 100;
   padding: 20px;
@@ -419,7 +448,7 @@ nav a {
   font-size: 2rem;
 }
 .body .story-btn button:hover {
-  color: #404040 !important;
+  color: #b12727 !important;
   font-weight: 700 !important;
   letter-spacing: 3px;
   background: none;
@@ -427,25 +456,48 @@ nav a {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.3s ease 0s;
 }
+@media (max-width:500px) {
+  .body .story-btn button {
+    margin-bottom: 5%;
+  }
+}
 .help {
-  width: 100%;
+  width: 90%;
   font-size: 2rem;
-  margin: 0;
+  margin-left: 2%;
+  margin-top: 3%;
 }
 @media (max-width:500px) {
   .help {
     width: 100%;
+    margin: 0;
+  }
+}
+.help h4 {
+  margin-left: 5%;
+}
+@media (max-width:500px) {
+  .help h4 {
+    margin-top: 5%;
   }
 }
 .help ul {
   line-height: 3;
-  width: 90%;
-  border: 2px solid #8CA744;
-  text-decoration-line: none;
+  width: 80%;
+  border: 2px dashed gray;
   height: 200px;
   margin: 5%;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .help ul {
+    line-height: normal;
+    height: 100px;
+    margin: 10%;
+  }
 }
 .help ul li {
+  text-decoration: none;
   margin-left: 5%;
 }
 .help .team-link {
@@ -453,9 +505,13 @@ nav a {
   font-size: 3rem;
   text-align: center;
 }
+@media (max-width:500px) {
+  .help .team-link {
+    margin: 0;
+  }
+}
 .help .team-link a {
   text-decoration-line: none;
-  margin-bottom: 5%;
   font-family: 'Sedgwick Ave Display', cursive;
 }
 .help .team-link a:hover {
@@ -470,7 +526,7 @@ nav a {
   }
 }
 #team-container {
-  background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
+  background: linear-gradient(232deg, #d7dde1, #f5deda, #d2eeee);
 }
 .team-head {
   width: 100%;
@@ -535,6 +591,11 @@ nav a {
 .jasmine .jasmine-content p {
   margin: 3%;
 }
+@media (max-width:500px) {
+  .jasmine .jasmine-content p {
+    font-size: 2rem;
+  }
+}
 .jasmine .jasmine-content button {
   margin-bottom: 3%;
 }
@@ -578,6 +639,11 @@ nav a {
 }
 .bao .bao-content p {
   margin: 3%;
+}
+@media (max-width:500px) {
+  .bao .bao-content p {
+    font-size: 2rem;
+  }
 }
 .bao .bao-content button {
   margin-bottom: 3%;
@@ -623,6 +689,11 @@ nav a {
 .heather .heather-content p {
   margin: 3%;
 }
+@media (max-width:500px) {
+  .heather .heather-content p {
+    font-size: 2rem;
+  }
+}
 .heather .heather-content button {
   margin-bottom: 3%;
 }
@@ -666,6 +737,11 @@ nav a {
 }
 .kerri-ann .kerri-ann-content p {
   margin: 3%;
+}
+@media (max-width:500px) {
+  .kerri-ann .kerri-ann-content p {
+    font-size: 2rem;
+  }
 }
 .kerri-ann .kerri-ann-content button {
   margin-bottom: 3%;
@@ -711,6 +787,11 @@ nav a {
 .brian .brian-content p {
   margin: 3%;
 }
+@media (max-width:500px) {
+  .brian .brian-content p {
+    font-size: 2rem;
+  }
+}
 .brian .brian-content button {
   margin-bottom: 3%;
 }
@@ -731,8 +812,10 @@ nav a {
 .team-content button {
   border: 2px solid black;
 }
-.team-foot {
-  width: 100%;
+@media (max-width:500px) {
+  .team-foot {
+    display: none;
+  }
 }
 footer {
   display: flex;

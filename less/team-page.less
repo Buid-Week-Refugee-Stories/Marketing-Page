@@ -1,15 +1,9 @@
-
-
-
 #team-container{
-    background: linear-gradient(232deg, #d7dde1, #e3c8c4, #d6eaea);
+    background: linear-gradient(232deg, #d7dde1, #f5deda, #d2eeee);
 }
 
 .team-head{
     width:100%;
-
-   
-    
    
 } //head end
 
@@ -27,8 +21,6 @@
     } //logo mobile query end
 
 }//logo div end
-
-
 
 .header{
     //border:3px solid blue;
@@ -51,20 +43,15 @@
     .team-layout();
     font-family: @team-font;
 
-  
-
     @media @mobile{
         width:100%;
 
-
     } //jasmine mobile query end
 
-    .jasmine-content{
+.jasmine-content{
 
-        .team-content();
+    .team-content();
 
-       
-    
         h3{
             
             margin:5%;
@@ -73,6 +60,10 @@
         p{
             
             margin:3%;
+
+            @media @mobile{
+                font-size: 2rem;
+            } //jasmine mobile p end
         }
     
         button{
@@ -102,21 +93,24 @@
 
 
     } //bao mobile query end
+ .bao-content{
 
-    .bao-content{
-
-        .team-content();
+    .team-content();
 
        
-    
-        h3{
+      h3{
             
-            margin:5%;
+         margin:5%;
         }
     
         p{
             
-            margin:3%;
+         margin:3%;
+
+         @media @mobile{
+            font-size: 2rem;
+        } //bao mobile p end
+
         }
     
         button{
@@ -149,7 +143,6 @@
 
         .team-content();
 
-        
     
         h3{
             
@@ -159,6 +152,10 @@
         p{
             
             margin:3%;
+
+            @media @mobile{
+                font-size: 2rem;
+            } //heather mobile p end
         }
     
         button{
@@ -187,11 +184,10 @@
     } //kerri-ann mobile query end
 
 
-    .kerri-ann-content{
-        .team-content();
+.kerri-ann-content{
+    .team-content();
 
        
-    
         h3{
             
             margin:5%;
@@ -200,6 +196,10 @@
         p{
             
             margin:3%;
+
+            @media @mobile{
+                font-size: 2rem;
+            } //kerri-ann mobile p end
         }
     
         button{
@@ -228,11 +228,10 @@
 
     } //brian mobile query end
 
-    .brian-content{
-        .team-content();
+.brian-content{
+    .team-content();
 
         
-    
         h3{
             
             margin:5%;
@@ -241,6 +240,10 @@
         p{
             
             margin:3%;
+
+            @media @mobile{
+                font-size: 2rem;
+            } //brian mobile p end
         }
     
         button{
@@ -281,6 +284,10 @@ button{
 
 
 .team-foot{
-    width:100%;
+
+    @media @mobile{
+        display:none;
+    } //team nav mobile end
+  
     
 }//team foot end
