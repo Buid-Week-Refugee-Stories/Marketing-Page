@@ -11,6 +11,11 @@
 .head{
 
     width:100%;
+
+    @media @tablet{
+        display: flex;
+        .layout(space-between, center);
+    }//tablet head end
   
 
     @media @mobile{
@@ -30,6 +35,10 @@
     width:8%;
     margin-right:5%;
 
+    @media @tablet{
+        width:40%;
+    }//logo tablet end
+
     @media @mobile{
         width:30%;
 
@@ -47,8 +56,14 @@
     border-radius:2%;
     //margin-top:5%;
 
+    @media @tablet{
+        height:40vh;
+        border-radius:none;
+    }//tablet query end
+
     @media @mobile{
         height: 33vh;
+        
       
     }//banner mobile query end
     
@@ -59,6 +74,10 @@
 width:80%;
 .layout(space-evenly, center);
 margin:5%;
+
+@media @tablet{
+    width:90%;
+}//intro tablet end
 
 
 @media @mobile{
@@ -79,11 +98,25 @@ margin:5%;
         font-size: @text-size;
         font-family: @text-font;
 
+        @media @tablet{
+            padding:none;
+            line-height: normal;
+        }//intro text tablet end
+
 } //intro-text end
 
 .intro-img{
    // border:2px solid turquoise;
     .img-style();
+
+    @media @tablet{
+        padding:none;
+        border-radius: none;
+    width: 55%;
+    height: 550px;
+    margin-top:30%;
+        
+    }//intro img tablet end
 
     @media @mobile{
         .mobile-img();
@@ -100,8 +133,9 @@ margin:5%;
     width:80%;
     flex-direction: column;
     flex-wrap: wrap;
-    border:2px dotted #E0bE12;
+    
     margin-bottom: 3%;
+    margin-top:2%;
     
 
     @media @mobile{
@@ -118,8 +152,15 @@ margin:5%;
         font-size: 2rem;
         margin-left:15%;
         text-align: center;
-        
         padding:3%;
+
+        
+        @media @tablet{
+            width:100%;
+            margin-left:5%;
+            padding:none;
+            line-height: normal;
+        }//video text tablet end
 
         @media @mobile{
             width:100%;
@@ -136,7 +177,9 @@ margin:5%;
         margin-left:30%;
         
         
-    
+        @media @tablet{
+            margin-left:15%;
+        }//youtube tablet end
 
         @media @mobile{
         width:100%;
@@ -154,6 +197,7 @@ margin:5%;
     margin:5%;
     width:80%;
 
+
     @media @mobile{
         
         flex-direction:column-reverse;
@@ -166,6 +210,17 @@ margin:5%;
   .body-img{
      // border:2px solid goldenrod;
       .img-style();
+
+      
+    @media @tablet{
+        padding:none;
+        border-radius: none;
+    width: 50%;
+    height: 550px;
+    margin-top:30%;
+    //margin:0,auto;
+        
+    }//body img tablet end
 
       @media @mobile{
         .mobile-img();
@@ -183,10 +238,18 @@ margin:5%;
         font-size: @text-size;
         font-family: @text-font;
 
+        @media @tablet{
+            padding:0;
+            line-height: normal;
+            width: 50%;
+            margin-left:5%;
+
+           
+        }//body text tablet end
+
+
       @media @mobile{
-          line-height: normal;
-          
-          
+          line-height: normal;   
    
       }//body-text mobile end
   } //body-text end
