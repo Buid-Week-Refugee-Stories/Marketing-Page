@@ -38,7 +38,7 @@
 
 
 .jasmine{
-    .layout(space-evenly, center);
+    .layout(space-between, center);
     flex-direction: column;
     .team-layout();
     font-family: @team-font;
@@ -46,43 +46,41 @@
     @media @mobile{
         width:100%;
 
+
     } //jasmine mobile query end
+ .jasmine-content{
 
-.jasmine-content{
-
+    width:60%;
     .team-content();
 
-        h3{
+       
+      h3{
             
-            margin:5%;
+         margin:5%;
         }
     
         p{
-              margin:3%;
-
-              @media @mobile{
-                font-size: 3rem;
-            } //jasmine tablet p end
-
-            @media @mobile{
-                font-size: 2rem;
-            } //jasmine mobile p end
-        }
-    
-        button{
             
-            margin-bottom:3%;
-        }
+         margin:3%;
+
+         @media @mobile{
+            font-size: 3rem;
+        } //jasmine tablet p end
+
+         @media @mobile{
+            font-size: 2rem;
+        } //jasmine mobile p end
+
+        } //p end
     
     
     
     .jasmine-img{
         .team-img();
-
-    } //jasmine img end
+ }//jasmine img end
 
 } //jasmine content end
-    
+
 } //jasmine div end
 
 .bao{
@@ -118,12 +116,8 @@
             font-size: 2rem;
         } //bao mobile p end
 
-        }
+        } //p end
     
-        button{
-            
-            margin-bottom:3%;
-        }
     
     
     .bao-img{
@@ -168,10 +162,7 @@
             } //heather mobile p end
         }
     
-        button{
-           
-            margin-bottom:3%;
-        }
+        
     
 
     .heather-img{
@@ -215,11 +206,6 @@
             } //kerri-ann mobile p end
         }
     
-        button{
-            
-            margin-bottom:3%;
-        }
-       
 
 
     .kerri-ann-img{
@@ -264,10 +250,7 @@
             } //brian mobile p end
         }
     
-        button{
-            
-            margin-bottom:3%;
-        }
+        
     
 
 
@@ -295,9 +278,7 @@ p {
     color: @team-color;
     font-size: @team-size;
 }
-button{
-    border:2px solid black;
-} //team content button end
+
 }//team content end
 
 
@@ -309,3 +290,8 @@ button{
   
     
 }//team foot end
+
+.buttons{
+    border:2px solid green;
+
+}
