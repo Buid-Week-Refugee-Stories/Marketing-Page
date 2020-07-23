@@ -18,3 +18,5 @@
 * `home-page.less` contains code for LESS home page main styling
 
 * `team-page.less` contains code for LESS team page main styling
+
+## Main React App code found in Build-Week-Refugee-Stories/Frontend repo
