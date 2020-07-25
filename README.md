@@ -7,7 +7,7 @@
 * Fully responsive web, tablet, mobile site
 
 
-## Specifications:
+## Specifications
 
 * Built using HTML, CSS, LESS
 
